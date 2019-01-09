@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>    
+    <title>Resproject</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <meta name="viewport" content="width=device-width" />
+
+    <script src="js/jquery.js"></script>
+    <script>
+        //Toggle for width display
+        var showWidth = 1;
+
+        if (showWidth == 1) {
+            $(document).ready(function () {
+                $(window).resize(function () {
+                    var width = $(window).width();
+                    document.getElementById('output_width').innerHTML = "Window Width:" + width.toString();
+                });
+            });
+        }
+    </script>
+</head>
+<body>
+    <div id="output_width"></div>
+    <div id="container">
+        <header class="main-header">
+            <img id="logo" src="images/logo.png" alt="Resproject">
+            <nav class="main-nav">
+                <ul>
+                    <li><a class="active" href="#">Home</a></li>
+                    <li><a href="#">Learn</a></li>
+                    <li><a href="#">Brainstorm</a></li>
+                    <li><a href="#">Create</a></li>
+                    <li><a href="#">Collaborate</a></li>
+                    <li><a href="#">Teach</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div id="main">
+            <div id="content">
+                <article class="art1">
+                    <header class="art-header">
+                        <h2 class="title"><a href="#">First Post</a></h2>
+                        <span>Created By: Jane Doe on November 21, 2017</span>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit sequi blanditiis at voluptatibus. Ut praesentium earum perspiciatis. Aliquam, numquam saepe.</p>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis, ipsa?</p>
+                    <a class="readmore" href="#">Read More</a>
+                </article>
+                <article class="art2">
+                    <header class="art-header">
+                        <h2 class="title"><a href="#">Second Post</a></h2>
+                        <span>Created By: Jane Doe on November 21, 2017</span>
+                    </header>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque mollitia eaque veniam eum natus delectus veritatis, quae enim qui animi impedit odio hic dolorem nostrum architecto ratione soluta dolores. Sapiente.</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum non perspiciatis veritatis numquam nesciunt iure!</p>
+                    <a class="readmore" href="#">Read More</a>
+                </article>
+            </div>
+            <aside id="sidebar">
+                <div class="block">
+                    <h2>Top Sidebar</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Non dicta consequuntur rerum cupiditate, at possimus doloremque facilis harum numquam molestiae? Asperiores minima nostrum deserunt distinctio?</p>
+                </div>
+                <div class="block">
+                    <h2>Mid Sidebar</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, corrupti quam natus veniam tempore esse, odit quos vitae magni porro obcaecati eveniet libero blanditiis laudantium.</p>
+                </div>
+                <div class="block">
+                    <h2>Bottom Sidebar</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum eius corrupti ipsam autem! Nesciunt voluptates, asperiores cumque soluta doloremque et nam veritatis quam ducimus beatae!</p>
+                </div>
+            </aside>
+        </div>
+        <div class="clr"></div>
+        <footer>
+            <p>Copyright &copy; 2017 Resproject</p>
+        </footer>
+    </div>
+</body>
+
+</html>
